@@ -25,7 +25,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.hwui.renderer=skiavk \
 	debug.sf.disable_backpressure=1 \
-    debug.sf.latch_unsignaled=1
+    debug.sf.latch_unsignaled=1 \
+	vendor.display.disable_rotator_downscale=1
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.telephony.default_network=22,22 \
