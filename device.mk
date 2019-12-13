@@ -21,7 +21,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # ANT+
 PRODUCT_PACKAGES += \
-    AntHalService
+    AntHalService-Soong
 
 # Audio
 PRODUCT_PACKAGES += \
