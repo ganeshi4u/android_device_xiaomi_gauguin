@@ -23,7 +23,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
-    debug.hwui.renderer=skiavk
+    debug.hwui.renderer=skiavk \
+	debug.sf.disable_backpressure=1 \
+    debug.sf.latch_unsignaled=1
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.telephony.default_network=22,22 \
@@ -37,7 +39,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # WFD
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.latch_unsignaled=1 \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0
 
