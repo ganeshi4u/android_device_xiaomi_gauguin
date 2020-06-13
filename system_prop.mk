@@ -25,3 +25,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Netflix custom property
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q8250-19134-1
+
+# Zygote
+PRODUCT_PROPERTY_OVERRIDES += \
+     persist.device_config.runtime_native.usap_pool_enabled=true
