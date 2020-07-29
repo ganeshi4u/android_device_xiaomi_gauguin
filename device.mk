@@ -62,6 +62,10 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhwbinder
 
+# Init
+PRODUCT_PACKAGES += \
+    init.recovery.qcom.rc
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.gauguin
