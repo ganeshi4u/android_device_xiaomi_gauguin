@@ -21,7 +21,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.bluetooth.disableinbandringing=false
 
-# Telephony
+# Graphics
+PRODUCT_PRODUCT_PROPERTIES += \
+    debug.hwui.renderer=skiavk
+
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.telephony.default_network=22,22 \
     persist.dbg.volte_avail_ovr=1 \
