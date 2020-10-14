@@ -33,3 +33,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=1 \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0
+
+# Disable smart fps switching
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.vendor.smart_dfps.enable=false 
