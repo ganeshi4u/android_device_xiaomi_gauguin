@@ -36,6 +36,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GCamGOPrebuilt
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
