@@ -26,7 +26,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.telephony.default_network=22,22 \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1
+    persist.dbg.wfc_avail_ovr=1 \
+	persist.vendor.ims.disableADBLogs=1 \
+    persist.vendor.ims.disableDebugLogs=1 \
+    persist.vendor.ims.disableIMSLogs=1 \
+    persist.vendor.ims.disableQXDMLogs=1
 
 # WFD
 PRODUCT_PROPERTY_OVERRIDES += \
