@@ -12,6 +12,7 @@ DEVICE_PATH := device/xiaomi/gauguin
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 ALLOW_MISSING_DEPENDENCIES := true
+BUILD_BROKEN_DUP_RULES := true
 
 # Architecture
 TARGET_ARCH := arm64
