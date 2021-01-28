@@ -59,6 +59,10 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhwbinder
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.gauguin
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay

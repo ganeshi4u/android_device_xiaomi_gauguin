@@ -5,3 +5,6 @@
 /op1(/.*)?               u:object_r:op1_file:s0
 /op2(/.*)?               u:object_r:op2_file:s0
 /persist(/.*)?           u:object_r:persist_file:s0
+
+# HALs
+/(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.light@2\.0-service    u:object_r:hal_light_default_exec:s0
