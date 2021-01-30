@@ -2,8 +2,8 @@ Copyright (C) 2021 ArrowOS
 
 Unified Device configuration for
 
-China  : Redmi Note 9 Pro 5G
-Global : Mi 10T Lite 5G
+China  : Redmi Note 9 Pro 5G <br>
+Global : Mi 10T Lite 5G <br>
 India  : Mi 10i 5G
 
 codename - *gauguin*
