@@ -117,6 +117,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# WFD
+PRODUCT_PACKAGES += \
+    libaacwrapper \
+    libnl
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
 # WiFi
 PRODUCT_PACKAGES += \
     WifiResCommon
