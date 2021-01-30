@@ -1,2 +1,5 @@
+# Display
+ro.sf.lcd_density=440
+
 # Radio
 ro.telephony.default_network=22,20
