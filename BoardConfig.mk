@@ -33,7 +33,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a76
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := gauguin,gauguinin,gauguininpro
+TARGET_OTA_ASSERT_DEVICE := gauguin,gauguinpro,gauguininpro
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true

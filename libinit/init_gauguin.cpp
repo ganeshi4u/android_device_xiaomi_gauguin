@@ -125,14 +125,27 @@ void set_device_props(const std::string fingerprint, const std::string descripti
 void vendor_load_properties() {
     char const fp[] = "Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys";
     char const fp_desc[] = "dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys";
+    string region = android::base::GetProperty("ro.boot.hwc", "");
 
-    set_device_props(
+    if (region == "INDIA") {
+        set_device_props(
             fp,
             fp_desc,
             "Xiaomi", "gauguininpro", "M2007J17I");
+    } else if (region == "GLOBAL") {
+        set_device_props(
+            fp,
+            fp_desc,
+            "Xiaomi", "gauguin", "M2007J17G");
+    } else if (region == "CN") {
+        set_device_props(
+            fp,
+            fp_desc,
+            "Redmi", "gauguinpro", "M2007J17C");
+    }
 
     load_dalvik_properties();
-    
+
     //Safetynet workarounds
     property_override("ro.oem_unlock_supported", "0");
     property_override("ro.boot.verifiedbootstate", "green");
