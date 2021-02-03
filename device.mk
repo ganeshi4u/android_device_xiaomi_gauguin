@@ -80,6 +80,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.gauguin
 
+# Notch hide overlay
+PRODUCT_PACKAGES += \
+    NotchHideOverlay \
+    NotchHideOverlaySystemUI
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
@@ -90,6 +95,10 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     DevicesOverlay \
     DevicesAndroidOverlay
+
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
 
 # Permissions
 PRODUCT_COPY_FILES += \
