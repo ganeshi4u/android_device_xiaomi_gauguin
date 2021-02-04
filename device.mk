@@ -90,6 +90,7 @@ PRODUCT_BOOT_JARS += \
 # Init
 PRODUCT_PACKAGES += \
     init.device.rc \
+    init.mi_thermald.rc \
     init.recovery.qcom.rc
 
 # Lights
