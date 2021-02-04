@@ -74,6 +74,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    init.device.rc \
     init.recovery.qcom.rc
 
 # Lights
