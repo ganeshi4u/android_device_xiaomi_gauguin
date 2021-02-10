@@ -47,7 +47,15 @@ endif
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     libaacwrapper
-    
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio_policy_configuration.xml
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    BluetoothQti
+
 # Camera
 PRODUCT_PACKAGES += \
     GCamGOPrebuilt
@@ -134,10 +142,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext \
     android.hidl.manager-V1.0-java
-
-# Vendor overlay
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor-overlay/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION))
 
 # WFD
 PRODUCT_PACKAGES += \
